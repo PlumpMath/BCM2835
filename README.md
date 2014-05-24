@@ -5,8 +5,8 @@ This is a work in progress far from being complete and therefore does not implem
 
 More information: http://www.airspayce.com/mikem/bcm2835/
 
-The solution was created using MonoDevelop 4.2.2. The included unmanaged shared library is v1.36.
-No need to build on the RPi but if you insist you can use the following:
+The solution was created using Visual Studio 2013 and the included unmanaged shared library is v1.36.
+No need to build on the RPi but if you insist you can use the following command:
 <pre>
 # xbuild BCM2835.sln
 </pre>

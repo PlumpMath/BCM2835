@@ -1,7 +1,7 @@
 BCM2835
 =======
 Managed version (using PInvoke) of the C library for Broadcom BCM 2835 as used in Raspberry Pi.
-This is a work in progress far from being complete and therefore does not implement many of the unmanaged code.
+The library imports all of the constants and methods.
 
 More information: http://www.airspayce.com/mikem/bcm2835/
 

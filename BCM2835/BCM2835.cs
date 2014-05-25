@@ -289,13 +289,13 @@ namespace PInvoke
         public static extern void bcm2835_peri_set_bits(IntPtr paddr, UInt32 value, UInt32 mask);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_fsel(Byte pin, Byte mode);
+        public static extern void bcm2835_gpio_fsel(RPiGPIOPin pin, bcm2835FunctionSelect mode);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_set(Byte pin);
+        public static extern void bcm2835_gpio_set(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_clr(Byte pin);
+        public static extern void bcm2835_gpio_clr(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
         public static extern void bcm2835_gpio_set_multi(UInt32 mask);
@@ -304,61 +304,61 @@ namespace PInvoke
         public static extern void bcm2835_gpio_clr_multi(UInt32 mask);
 
         [DllImport("libbcm2835.so")]
-        public static extern Byte bcm2835_gpio_lev(Byte pin);
+        public static extern Byte bcm2835_gpio_lev(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern Byte bcm2835_gpio_eds(Byte pin);
+        public static extern Byte bcm2835_gpio_eds(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_set_eds(Byte pin);
+        public static extern void bcm2835_gpio_set_eds(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_ren(Byte pin);
+        public static extern void bcm2835_gpio_ren(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_clr_ren(Byte pin);
+        public static extern void bcm2835_gpio_clr_ren(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_fen(Byte pin);
+        public static extern void bcm2835_gpio_fen(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_clr_fen(Byte pin);
+        public static extern void bcm2835_gpio_clr_fen(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_hen(Byte pin);
+        public static extern void bcm2835_gpio_hen(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_clr_hen(Byte pin);
+        public static extern void bcm2835_gpio_clr_hen(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_len(Byte pin);
+        public static extern void bcm2835_gpio_len(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_clr_len(Byte pin);
+        public static extern void bcm2835_gpio_clr_len(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_aren(Byte pin);
+        public static extern void bcm2835_gpio_aren(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_clr_aren(Byte pin);
+        public static extern void bcm2835_gpio_clr_aren(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_afen(Byte pin);
+        public static extern void bcm2835_gpio_afen(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_clr_afen(Byte pin);
+        public static extern void bcm2835_gpio_clr_afen(RPiGPIOPin pin);
 
         [DllImport("libbcm2835.so")]
         public static extern void bcm2835_gpio_pud(Byte pud);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_pudclk(Byte pin, Byte on);
+        public static extern void bcm2835_gpio_pudclk(RPiGPIOPin pin, Byte on);
 
         [DllImport("libbcm2835.so")]
-        public static extern UInt32 bcm2835_gpio_pad(Byte group);
+        public static extern UInt32 bcm2835_gpio_pad(bcm2835PadGroup group);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_set_pad(Byte group, UInt32 control);
+        public static extern void bcm2835_gpio_set_pad(bcm2835PadGroup group, UInt32 control);
 
         [DllImport("libbcm2835.so")]
         public static extern void bcm2835_delay(UInt32 millis);
@@ -367,7 +367,7 @@ namespace PInvoke
         public static extern void bcm2835_delayMicroseconds(UInt64 micros);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_write(Byte pin, Byte on);
+        public static extern void bcm2835_gpio_write(RPiGPIOPin pin, Byte on);
 
         [DllImport("libbcm2835.so")]
         public static extern void bcm2835_gpio_write_multi(UInt32 mask, Byte on);
@@ -376,7 +376,7 @@ namespace PInvoke
         public static extern void bcm2835_gpio_write_mask(UInt32 value, UInt32 mask);
 
         [DllImport("libbcm2835.so")]
-        public static extern void bcm2835_gpio_set_pud(Byte pin, Byte pud);
+        public static extern void bcm2835_gpio_set_pud(RPiGPIOPin pin, bcm2835PUDControl pud);
 
         [DllImport("libbcm2835.so")]
         public static extern void bcm2835_spi_begin();
